@@ -1,0 +1,283 @@
+@font-face {
+    font-family:general;
+    src: url(GeneralSans-Regular.otf);
+}
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+
+    width: 100%;
+    color: white;
+    background-color: black;
+  
+}
+#cursor{
+    z-index: 999;
+        height: 10px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+   position: absolute  ;
+   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+   border-radius: 50%;
+}
+#page1{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 200px;
+}
+.bounding{
+    overflow: hidden;
+
+    transform: translateY(0%);
+}
+.bounding .boundingelem{
+
+    transform: translateY(100%);
+}
+
+#nav{
+   
+    font-family:General;
+    color:white;
+    height: 60px;
+    font-weight: 100;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+justify-content: space-between;
+}
+
+#heading{
+    height: fit-content;
+    font-family: general;
+
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-size: 60px;
+   padding: 90px 28px;
+   
+    width: 100%;
+    line-height: 110px;
+    
+}#heading h1{
+    opacity: 0.6;
+}
+.blocktext h1{
+    opacity: 0.6;
+}
+
+ .blocktext{
+   
+    padding-left: 150px;
+    
+    width: fit-content;
+    
+}
+.blocktext h6{
+    
+    line-height: 30px;
+    font-size: 15px;
+    text-align: right;
+}
+#freelance{
+    font-family: General;
+    line-height: 30px;
+    padding-right: 35px;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 20px;
+    height: 90px;
+    width: 100%;
+   
+}
+
+#footer1{
+    height: 50px;
+    width: 100%;
+
+    font-size: 12px;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 0 40px 20px 40px;
+
+}
+#footer1 a{
+  color: white;
+
+  font-family: General;
+  text-transform: uppercase;
+  
+}
+#iconset{
+
+    display: flex;
+    gap: 5px;
+}
+#iconset .circle{
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.767);
+}
+.circle i{
+    color: black;
+    transform: translateY(0%);
+}
+.circle:hover i{
+
+    transform: translateY(100%);
+}
+#page2{
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgb(0, 0, 0);
+    padding-right: 120px;
+}
+
+.elem {
+    height: 150px;
+    width: 100%;
+padding-top: 30px;
+font-family: "General";
+padding-left: 30px;
+font-weight: 100;
+opacity: 0.7;
+position: relative;
+padding-bottom: 20px;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+    border-top: 1px solid rgba(235, 235, 235, 0.635);
+    text-transform: uppercase;
+
+}
+.elem h1{
+    font-size: 8vw;
+
+}
+
+.elem img{
+overflow: hidden;
+opacity: 1;
+    z-index: index 999;;
+    height: 200px;
+    width: 200px;
+  position: absolute;
+transform: translate(-50%, -50%);
+
+}
+
+#eleem{
+    border-bottom:1px solid rgb(179, 179, 179) ;
+}
+#page3{
+    padding-top: 80px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height:80vh;
+    padding-left: 300px;
+  
+}
+#page3 img{
+    height: 200px;
+    width: 200px;
+    
+}
+#page3 p{
+    width: 350px;
+   font-weight: 10;
+    font-size: 15px;
+font-family: general;
+margin-bottom: 20px;
+  
+}
+#text{
+
+    height: 40vh;
+}
+#page3 #text a {
+    background-color: rgb(5, 4, 4);
+color: white;
+text-transform: uppercase;
+border-radius: 100px;
+    height: 100px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    width: 200px;
+}
+#text{
+
+   padding-left: 50px;
+}
+#page3 span{
+    font-size: 15px;
+    font-family: general;
+    text-transform: uppercase;
+    opacity: .6;
+}
+
+
+#subscribe{
+    padding-left: 40px;
+    font-family: general;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+
+#subscribe h5{
+    opacity: .5;
+}
+#subscribe h4{
+    line-height: 30px;
+text-transform: uppercase;
+}
+#subscribe:hover i{
+    color: red;
+    transform: rotate(90deg);
+}
+#footer2{
+    font-size: 20px;
+    padding-top: 120px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    background-color: black;
+}
+#right{
+    display: flex;
+  gap: 40px;
+  font-size: 15px;
+  padding-right: 25px;
+  text-transform: uppercase;
+  font-family: general;
+    /* background-color: red; */
+}
+#left{
+    display: flex;
+  gap: 40px;
+  font-size: 15px;
+  padding-left:50px;
+  text-transform: uppercase;
+  font-family: general;
+    /* background-color: red; */
+}
